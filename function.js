@@ -55,11 +55,10 @@ for (const callIcon of call) {
             mainDiv.appendChild(Rdiv);
             mainDiv.appendChild(Ldiv);
 
-            mainDiv.classList.add("flex", "justify-between", "items-center", "p-5");
+            mainDiv.classList.add("md:flex", "justify-between", "items-center","mb-3" ,"md:p-5");
 
             const target = document.getElementById('clearHistory');
             target.appendChild(mainDiv);
-
 
         }
     });
