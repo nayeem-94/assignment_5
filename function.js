@@ -10,6 +10,16 @@ for (const heartIcon of heart) {
 }
 
 
+// copy count
+const copy = document.getElementsByClassName('copyClick');
+for (const copyIcon of copy) {
+    copyIcon.addEventListener('click', function () {
+
+        const copyCount = document.getElementById('totalCopy');
+        copyCount.innerText = parseInt(copyCount.innerText) + 1;
+    });
+}
+
 // console.log(call);
 const call = document.getElementsByClassName('callClick');
 for (const callIcon of call) {
